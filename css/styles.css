@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(4, 105, 105);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+input {
+    outline: none;
+}
+
+.centralizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 60%;
+    min-width: 430px;
+    background-color: #e9e4e4;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    gap: .8rem;
+}
+
+h1 {
+    text-align: left;
+}
+
+.calculadora-container {
+    width: 70%;
+    padding-top: 1.2rem;
+    
+}
+
+.insert-numbers, .insert-numbers input {
+    width: 100%;
+}
+
+.insert-numbers input {
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: right;
+    padding: .1rem .3rem;
+    border-radius: .15rem;
+    border: solid 1px rgba(0, 0, 0, .4);
+}
+
+.digitos-container {
+    padding-top: .25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .25rem;
+   
+}
+
+.digitos-container span {
+    height: 2.9rem;  
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: .15rem;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+
